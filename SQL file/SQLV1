@@ -1,0 +1,54 @@
+/* 
+ *  AUTHOR: DAVID THOMAS MORGAN 
+ *  CREATED: 13/05/2019
+ *  LAST UPDATED: 13/05/2019 
+ */
+CREATE SCHEMA IndustrialWeek;
+
+/* Creates 'Position' table */
+CREATE TABLE IndustrialWeek.position
+(ID SERIAL PRIMARY KEY,
+posx integer NOT NULL,
+posy integer NOT NULL,
+posz integer NOT NULL,
+rotation integer NOT NULL
+);
+
+/* Creates 'users' table */
+CREATE TABLE IndustrialWeek.users
+(ID SERIAL PRIMARY KEY,
+type varchar(225) NOT NULL,
+name varchar(225) NOT NULL
+);
+
+
+/* Creates 'Director' table */
+CREATE TABLE IndustrialWeek.director
+(ID INTEGER PRIMARY KEY,
+position integer NOT NULL,
+FOREIGN KEY (ID) REFERENCES IndustrialWeek.users(ID),
+FOREIGN KEY (position) REFERENCES IndustrialWeek.position(ID)
+);
+
+
+/* Creates 'Stream' table */
+CREATE TABLE IndustrialWeek.stream
+(ID SERIAL PRIMARY KEY,
+stateOf BOOLEAN NOT NULL,
+lockedBy integer,
+FOREIGN KEY (lockedBy) REFERENCES IndustrialWeek.director(ID)
+);
+
+
+/* Creates 'Object' table */
+CREATE TABLE IndustrialWeek.objects
+(ID SERIAL PRIMARY KEY,
+type varchar(255) NOT NULL,
+position integer NOT NULL,
+annotation text,
+title varchar(255) NOT NULL,
+time time NOT NULL,
+severity varchar(255) NOT NULL,
+author varchar(255),
+FOREIGN KEY (position) REFERENCES IndustrialWeek.position(ID)
+);
