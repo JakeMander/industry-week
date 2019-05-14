@@ -16,7 +16,7 @@ function getStateOfChat()
         instance = true;
         $.ajax({
             type: "POST",
-            url: "ChatProcess.php",
+            url: "ChatProcess",
             data: {
                 'function': 'getState',
                 'file': file
@@ -38,7 +38,7 @@ function updateChat()
         instance = true;
         $.ajax({
             type: "POST",
-            url: "ChatProcess.php",
+            url: "ChatProcess",
             data: {'function':'update','state':state,'file':file},
             dataType: "json",
             success: function(data)
@@ -67,7 +67,7 @@ function sendChat(message, nickname)
     updateChat();
     $.ajax({
         type: "POST",
-        url: "ChaTProcess.php",
+        url: "ChatProcess",
         data: {'function': 'send','message': message, 'nickname': nickname, 'file':file},
         dataType: "json",
         success: function(data)
