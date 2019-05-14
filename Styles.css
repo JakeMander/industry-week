@@ -1,0 +1,130 @@
+html{
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+html, body {
+    color: #ffffff;
+    background: #2f239c;
+}
+html, body, p, th, td, li, dd, dt {
+    font: 1em Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #ff7b59;
+}
+
+
+#MAIN{
+    margin: 5px;
+
+}
+
+
+#videoSect {
+    width: 70%;
+    height: 500px;
+    border: 5px solid green;
+    float: left;
+    margin: 5px;
+
+}
+#buttonSect {
+    width: 26%;
+    height: max-content;
+    border: 5px solid red;
+    float: right;
+    margin: 5px;
+
+}
+#chatSect {
+    width: 26%;
+    height: 500px;
+    border: 5px solid #ff00d6;
+    float: right;
+    margin: 5px;
+
+}
+#dataSect {
+    width: 70%;
+    height: 300px;
+    border: 5px solid blue;
+    float: left;
+    margin: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button {
+    background-color: #af6231; /* Green */
+    border: none;
+    color: white;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button:active {
+    background-color: #804624;
+}
+.stop {background-color: #a80004;} /* Red */
+.stop:active {
+    background-color: #780004;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #804624;
+}
+.active {
+    background-color: #af6231;
+}
