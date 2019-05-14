@@ -1,0 +1,41 @@
+
+
+#mainHome{
+    margin: 5px;
+    text-align: center;
+
+}
+
+
+#videoSect {
+    width: 70%;
+    height: 500px;
+    border: 5px solid green;
+    float: left;
+    margin: 5px;
+
+}
+#buttonSect {
+    width: 26%;
+    height: max-content;
+    border: 5px solid red;
+    float: right;
+    margin: 5px;
+
+}
+#chatSect {
+    width: 26%;
+    height: 500px;
+    border: 5px solid #ff00d6;
+    float: right;
+    margin: 5px;
+
+}
+#dataSect {
+    width: 70%;
+    height: 300px;
+    border: 5px solid blue;
+    float: left;
+    margin: 5px;
+
+}
