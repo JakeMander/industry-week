@@ -12,10 +12,25 @@
     <h1>Choose a Mode</h1>
 </div>
 <div class="btn-group">
-    <button class="btn-group">Director Mode</button>
-    <button class="btn-group">Guest Mode</button>
-    <button class="btn-group">Camera Operator</button>
+    <button class="btn-group" onclick="nameFunction()">Director Mode</button>
+    <button class="btn-group" onclick="nameFunction()">Guest Mode</button>
+    <button class="btn-group" onclick="nameFunction()">Operator</button>
 </div>
+<script>
+    function nameFunction() {
+        var name = prompt('Enter Your Name:')
 
+        if (name == null || name == "") {
+            /*Nothing Enterd*/
+        } else {
+            location.replace('HomePage.html')
+            sessionStorage.setItem("name", name);
+
+
+        }
+
+    }
+
+</script>
 </body>
 </html>

@@ -10,7 +10,7 @@
 #videoSect {
     width: 70%;
     height: 500px;
-    border: 5px solid green;
+    border: 2px solid green;
     float: left;
     margin: 5px;
 
@@ -18,7 +18,7 @@
 #buttonSect {
     width: 26%;
     height: max-content;
-    border: 5px solid red;
+   /* border: 2px solid red;*/
     float: right;
     margin: 5px;
 
@@ -26,7 +26,8 @@
 #chatSect {
     width: 26%;
     height: 500px;
-    border: 5px solid #ff00d6;
+    /*border: 2px solid #ff00d6;*/
+    background: rgb(220, 220, 220);
     float: right;
     margin: 5px;
 
@@ -34,7 +35,7 @@
 #dataSect {
     width: 70%;
     height: 300px;
-    border: 5px solid blue;
+    border: 2px solid blue;
     float: left;
     margin: 5px;
 

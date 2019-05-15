@@ -1,7 +1,7 @@
 html{
     width: 80%;
     margin: auto;
-    border: 5px solid #a8ad00;
+    /*border: 5px solid #a8ad00;*/
     color: #ffffff;
     background: #2f239c;
 }
@@ -12,6 +12,10 @@ html, body, p, th, td, li, dd, dt {
 
 h1 {
     color: #ff7b59;
+    text-align: center;
+
+}
+h3{
     text-align: center;
 
 }
