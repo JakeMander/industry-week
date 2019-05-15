@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="buttonsStyle.css">
+    <link rel="stylesheet" href="homePage.css">
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Home Page</h1>
+    <h3 id = "UsernameHeader"></h3>
+    <h3>Guest Mode</h3>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#Settings">Settings</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+    <p></p>
+
+    <div id="mainHome">
+
+        <div id="videoSect">
+
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/2M0inetghnk?controls=0" frameborder="0" autoplay=1; ></iframe>        </div>
+        <div id="buttonSect">
+
+
+        </div>
+        <div id="chatSect">
+
+        </div>
+        <div id="dataSect">
+
+        </div>
+
+    </div>
+<script>
+    document.getElementById("UsernameHeader").innerHTML = "Username: " + sessionStorage.getItem("name");
+
+</script>
+
+</body>
+
+</html>

@@ -12,24 +12,39 @@
     <h1>Choose a Mode</h1>
 </div>
 <div class="btn-group">
-    <button class="btn-group" onclick="nameFunction()">Director Mode</button>
-    <button class="btn-group" onclick="nameFunction()">Guest Mode</button>
-    <button class="btn-group" onclick="nameFunction()">Operator</button>
+    <button class="btn-group" onclick="directorFunction()">Director Mode</button>
+    <button class="btn-group" onclick="guestFunction()">Guest Mode</button>
 </div>
 <script>
-    function nameFunction() {
+    function directorFunction() {
         var name = prompt('Enter Your Name:')
 
         if (name == null || name == "") {
             /*Nothing Enterd*/
         } else {
-            location.replace('HomePage.html')
+
+            location.replace('HomePageDirector.html')
+            sessionStorage.setItem("name", name);
+        }
+    }
+    function guestFunction() {
+        var name = prompt('Enter Your Name:')
+
+        if (name == null || name == "") {
+            /*Nothing Enterd*/
+        } else {
+
+            location.replace('HomePageGuest.html')
             sessionStorage.setItem("name", name);
 
 
         }
 
     }
+
+
+
+
 
 </script>
 </body>
