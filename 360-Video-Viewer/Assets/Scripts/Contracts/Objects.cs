@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Objects
 {
     public int id;
     public string type;
-    public int position;
-    public string annotation;
-    public string title;
-    public string time;
-    public string severity;
-    public string author;
+    public int posx;
+    public int posy;
+    public int rotation;
+    public int posz;
 }
